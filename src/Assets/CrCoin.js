@@ -29,7 +29,7 @@ const CrCoin = () => {
      getCoins(); 
     }, [coinId,url])
     const coinChartData = ChartArray.map((value)=>({x:value[0] , y:value[1].toFixed(2)}));
-  console.log(Crcoin);
+    const Cryp = Crcoin.map((element)=>element.name);
   return (
 <>
 {
