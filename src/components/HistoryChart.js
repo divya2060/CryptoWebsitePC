@@ -40,7 +40,7 @@ const HistoryChart = (props) => {
     <div style={{marginTop:'1.2rem'}}>
     <Line
     options={
-      {s
+      {
         responsive:true
       }
     }
