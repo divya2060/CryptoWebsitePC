@@ -24,8 +24,7 @@ import moment from 'moment';
   );
 const HistoryChart = (props) => {
   const { coinId } = useParams();
-  const date = []
-  const prices = []
+ 
   const data = {
     labels:props.coin.map(value=>moment(value.x).format('MMM DD')),
     datasets:[
