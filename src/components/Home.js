@@ -25,7 +25,7 @@ const Home = () => {
 
     </div>
     <div className='right'>
-    <img src={logo} alt='Image' />
+    <img src={logo} alt='this is bitcoin' />
     </div>
     </div>
   )
