@@ -1,0 +1,19 @@
+.Coin-container{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border: 2px solid gray;
+    margin:10px 10px;
+    align-items: center;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 2rem;
+}
+.Coin-container:hover{
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px 5px black;
+}
+

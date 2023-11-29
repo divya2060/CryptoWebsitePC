@@ -1,0 +1,40 @@
+.Navbar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.725);
+    color: red;
+    height: 10vh;
+}
+.logo{
+    width: 20vw;
+    height: 10vh;
+}
+nav{
+    width: 78vw;
+    height: 10vh;
+    display: flex;
+    gap: 20px;
+}
+.a{
+    font-size: 1.35vw;
+    color: white;
+    text-decoration: none;
+    margin-top: 12px;
+    transition: 0.4s;
+}
+.a:hover{
+    font-size: 1.55vw;
+    color: blue;
+}
+@media (max-width:600px){
+    .a{
+        font-size: 1.5vh;
+        color: red;
+        margin-left: 1.2rem;   
+    }
+    nav{
+        gap: 1.3rem;
+    }
+    .logo{
+        display: none;
+    }
+}

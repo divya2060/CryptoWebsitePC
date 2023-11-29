@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loader{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: bold;
+    color:slateblue;
+}
+.Circle{
+    width: 200px;
+    height: 200px;
+    border-bottom:3px solid red;
+    border-radius: 50%;
+    animation: rot 0.5s infinite ease-in;
+}
+@keyframes rot {
+  to {
+    transform: rotateZ(360deg)
+  }    
+}
