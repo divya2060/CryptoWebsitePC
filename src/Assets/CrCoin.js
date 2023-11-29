@@ -10,7 +10,6 @@ const CrCoin = () => {
     const [Crcoin, setCrcoin] = useState({});
     const [Loading,setLoading] = useState(true);
     const [ChartArray, setChartArray] = useState([])
-    const [days, setdays] = useState('24h');
     useEffect(() => {
      const getCoins = async ()=>{
         try{
@@ -28,9 +27,9 @@ const CrCoin = () => {
         }
      }
      getCoins(); 
-    }, [coinId])
+    }, [coinId,url])
     const coinChartData = ChartArray.map((value)=>({x:value[0] , y:value[1].toFixed(2)}));
-  
+  console.log(Crcoin);
   return (
 <>
 {
