@@ -30,6 +30,7 @@ const CrCoin = () => {
     }, [coinId,url])
     const coinChartData = ChartArray.map((value)=>({x:value[0] , y:value[1].toFixed(2)}));
     const Cryp = Crcoin.map((element)=>element.name);
+    console.log(Cryp);
   return (
 <>
 {
@@ -37,7 +38,7 @@ const CrCoin = () => {
   <Loader/>
   :(
     <>
-    <HistoryChart arr={ChartArray} coin={coinChartData} arr1={Crcoin}/>
+    <HistoryChart arr={ChartArray} coin={coinChartData} arr1={Crcoin} name={Cryp}/>
 <div className='Cr-container'>
   <div className='name'>
   <img src={Crcoin.image.small} alt={Crcoin.name} />
